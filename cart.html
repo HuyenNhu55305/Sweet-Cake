@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/pay.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="css/style.css"> <!-- main css -->
+  <link rel="stylesheet" href="css/all.css"> <!-- font awesome -->
+  <title>2Paz's Sweets</title>
+  <style>
+
+      #wrapper{
+          width:100%;
+          height:100%;
+          margin: 50px auto;
+      }
+      .center{
+          width:100%;
+          height:50%;
+      }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg px-4 sticky ">
+      
+        <div class="collapse navbar-collapse" id="myNav">
+            <div id="wrapper">
+                <div class="center">
+                    <ul class="navbar-nav mx-auto text-capitalize" id="ul">
+                        <li class="nav-item active"><a class="nav-link" href="#">home</a></li>
+                        <li class="nav-item"><a class="nav-link " href="#about">about</a></li>
+                        <a class="navbar-brand" href="#"><img src="img/logo1.png" width="300" height="95"></a>
+                        <li class="nav-item"><a class="nav-link" href="#store">store</a></li>
+                    </ul>
+                </div>
+        </div>
+        <!-- Hide this on sml -->
+        <div class="nav-info-items d-none d-lg-flex ">
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0">+01XXX</p>
+          </div>
+        </div>
+      </div>
+      <!-- Always show this div, but only show the <p> tag on screens ≥ ipad -->
+      <div class="navbar-nav text-capitalize">
+        <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between">
+          <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+          <p class="mb-0 text-capitalize"><span id="item-count">0 </span> items - $<span class="item-total">0.00</span>
+          </p>
+        </div>
+      </div>
+    </nav>
+    <!-- banner  -->
+    <div class="container-fluid">
+        <div class="row max-height justify-content-center align-items-center">
+          <div class="col-10 mx-auto banner text-center">
+            <h1 class="text-capitalize">welcome to <strong class="banner-title ">Sweet World</strong></h1>
+            <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+          </div>
+          <div id="cart" class="cart">
+  
+            <!-- cart total -->
+            <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+              <h5>total</h5>
+              <h5> $ <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+            </div>
+            <!-- end cart total -->
+            <!-- cart buttons -->
+            <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+              <a id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+              <a class="btn btn-outline-secondary text-uppercase btn-pink disabled">checkout</a>
+            </div>
+            <!--end of cart buttons -->
+          </div>
+        </div>
+      </div>
+      <!--end of banner  -->
+  </header>
+  <section style="background-color: #e0e0d1; padding-left:30%;padding-bottom: 1%;" >
+    <div class="container">
+        <div class="row">
+            <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <address>
+                            <strong>Elf Cafe</strong>
+                            <br>
+                            2135 Sunset Blvd
+                            <br>
+                            Los Angeles, CA 90026
+                            <br>
+                            <abbr title="Phone">P:</abbr> (213) 484-6829
+                        </address>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                        <p>
+                            <em>Date: 1st November, 2013</em>
+                        </p>
+                        <p>
+                            <em>Receipt #: 34522677W</em>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                        <h1>Receipt</h1>
+                    </div>
+                    </span>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>#</th>
+                                <th class="text-center">Price</th>
+                                <th class="text-center">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-md-9"><em>Baked Rodopa Sheep Feta</em></h4></td>
+                                <td class="col-md-1" style="text-align: center"> 2 </td>
+                                <td class="col-md-1 text-center">$13</td>
+                                <td class="col-md-1 text-center">$26</td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-9"><em>Lebanese Cabbage Salad</em></h4></td>
+                                <td class="col-md-1" style="text-align: center"> 1 </td>
+                                <td class="col-md-1 text-center">$8</td>
+                                <td class="col-md-1 text-center">$8</td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-9"><em>Baked Tart with Thyme and Garlic</em></h4></td>
+                                <td class="col-md-1" style="text-align: center"> 3 </td>
+                                <td class="col-md-1 text-center">$16</td>
+                                <td class="col-md-1 text-center">$48</td>
+                            </tr>
+                            <tr>
+                                <td>   </td>
+                                <td>   </td>
+                                <td class="text-right">
+                                <p>
+                                    <strong>Subtotal: </strong>
+                                </p>
+                                <p>
+                                    <strong>Tax: </strong>
+                                </p></td>
+                                <td class="text-center">
+                                <p>
+                                    <strong>$6.94</strong>
+                                </p>
+                                <p>
+                                    <strong>$6.94</strong>
+                                </p></td>
+                            </tr>
+                            <tr>
+                                <td>   </td>
+                                <td>   </td>
+                                <td class="text-right"><h4><strong>Total: </strong></h4></td>
+                                <td class="text-center text-danger"><h4><strong>$31.53</strong></h4></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-success btn-lg btn-block">
+                        Pay Now   <span class="glyphicon glyphicon-chevron-right"></span>
+                    </button></td>
+                </div>
+            </div>
+        </div>
+  </section>
+  <!-- footer -->
+  <footer id="footer">
+    <div>
+      <div id="copywrite"><p>© Github Community</p></div>
+      <div id="myLink">
+        <a href="https://steamcommunity.com/id/ksjavel1n" class="btn btn-outline-secondary btn-black">
+          <i class="fas fa-long-arrow-alt-left"></i>Sweet World
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <!-- confirmation pop-up -->
+  <div id="confirmation" class="">
+    <p>Your item has been added to the cart.</p>
+  </div>
+  <!-- end of confirmation pop-up -->
+
+  <!-- scripts -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pay.js"></script>
+</body>
+</html>
